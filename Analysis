@@ -1,0 +1,65 @@
+Non-Access Modifiers:
+
+	1)The Static Modifier:
+		i) static Variables:
+						Static variables are defined as a class member that can be accessed without any object of
+						that class. Static variable has only one single storage. All the object of the class having static
+						variable will have the same instance of static variable.Static variables are initialized only once.
+		ii)static Methods:
+					A method can also be declared as static. Static methods do not need instance of its class 
+					for being accessed.
+					
+		iii)Static block:
+					Static block is used to initialize static data member. Static block executes before main() method.
+	
+	2)Final:
+		i)Final Variable:
+					-When a variable is declared as final, then its value cannot be changed.
+					 The variable acts like a constant.
+					 -final variable always needs initialization, if you don’t initialize it would throw a 
+					 compilation error. 
+		ii)Final Method:
+					if method is declared as Final then we cannot override that method in subclass.
+		iii)Final class:
+					we cannot extend the class which is declared as a final.
+				
+	3)Strictfp :
+				-strictfp is a keyword in the Java programming language that restricts floating-point calculations to
+				ensure portability
+				-Strictfp ensures that you get exactly the same results from your floating point calculations on every platform. 
+					If you don't use strictfp, the JVM implementation is free to use extra precision where available.
+					 Strictfp non access modifier cannot be applied on a variable.
+	
+	4)Abstract:
+		  i)Abstract Class:
+		  			If a class is declared as abstract, then that class can never be instantiated(we cannot create object
+		  			 of an abstract class)
+		  ii)Abstract Method:
+		  			Abstract methods are those methods which does not have a body but only a signature. 
+		  			The method body is provided by sub class.
+		  			Any class that extends an abstract class must implement all the abstract methods of the super class 
+		  			
+------------------------------------------------------------------------------------------------------------------------------------------	
+
+Access Modifier Report:
+
+1) Private Member:
+		if method is Private then it will not visible to other class.
+		private members are not inherited in subclasses
+		
+2)Protected Member:
+				 * protected method of one class is accessible in another class in same package.
+				 * protected method not accessible in another class of another package
+				 * protect method of secondClass not accessible in third class it will become private
+				 	("Once the subclass-outside-the-package inherits the protected member, that member
+				  	(as inherited by the subclass) becomes private to any code outside the subclass, with the
+				   	exception of subclasses of the subclass.")
+				 * we can access directy because it is inherited in subclass
+				 * protected static variables are also inherited in subclass
+				 
+3)Public Members:
+				
+				 
+				 
+		
+
