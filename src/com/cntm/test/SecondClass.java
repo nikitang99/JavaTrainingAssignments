@@ -3,7 +3,8 @@ package com.cntm.test;
 public class SecondClass 
 {
 	 protected static int paramTwo = 20;
-	 private static int paramThree = 20;
+	 @SuppressWarnings("unused")
+	private static int paramThree = 20;
 	 public static int paramFour = 20;
 	 private int paraMeter1 = 30;
 	 public int paraMeter2 = 40;
