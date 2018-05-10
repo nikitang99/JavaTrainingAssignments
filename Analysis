@@ -58,6 +58,10 @@ Access Modifier Report:
 				 * protected static variables are also inherited in subclass
 				 
 3)Public Members:
+			*public Members are accessible in another class in same package
+			**public Members are accessible in another class in different package
+			**public Members are accessible in sub class in same package
+			*public Members are accessible in another class in different package
 				
 				 
 				 
