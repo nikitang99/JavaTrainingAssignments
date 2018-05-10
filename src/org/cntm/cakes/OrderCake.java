@@ -1,9 +1,9 @@
 package org.cntm.cakes;
 
 import java.util.Scanner;
-class CakeFactory
+class CakeCollection
 {	
-	public static Cake getInstance( int choice )
+	public static Cake getCakeOnChoice( int choice )
 	{		
 		switch( choice )
 		{
@@ -14,9 +14,9 @@ class CakeFactory
 		return null;
 	}
 }
-class FlavourFactory	//Factory Method for Flavours
+class FlavourChoices	//Factory Method for Flavours
 {	
-	public static IFlavours getInstance( int choice )
+	public static IFlavours getChoice( int choice )
 	{		
 		switch( choice )
 		{
@@ -44,12 +44,13 @@ class ProcessCake
 	
 	public static int flavourMenuList(){
 		System.out.println("\n");
+		System.out.println("Choose Flavour: ");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("0.Exit");
 		System.out.println("1.Chocolate");
 		System.out.println("2.Black-Forest Cake");
 		
-		System.out.println("Choose Flavour: ");
+		
 		return sc.nextInt();		
 	}
 	
@@ -76,7 +77,7 @@ class ProcessCake
 	{
 		int choice = ProcessCake.flavourMenuList();
 	
-			IFlavours flvour  =  FlavourFactory.getInstance(choice);
+			IFlavours flvour  =  FlavourChoices.getChoice(choice);
 			ProcessCake.ChooseFlavour(flvour);
 		
 	}
@@ -122,15 +123,13 @@ class ProcessCake
 	}
 }
 public class OrderCake {
-
-
-
+	
 	public static void main(String[] args) 
 	{
 		int choice;
 		while( ( choice = ProcessCake.menuList( ) )  != 0 )
 		{
-			Cake cake  =  CakeFactory.getInstance(choice);
+			Cake cake  =  CakeCollection.getCakeOnChoice(choice);
 			ProcessCake.makeCake(cake);
 		}
 
