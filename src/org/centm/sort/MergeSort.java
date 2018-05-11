@@ -5,6 +5,7 @@ public class MergeSort implements Isort {
 	@Override
 	public int[]  sort(int[] arr) {
 		MrgeSort(arr, 0, arr.length-1);
+		System.out.println("Merge Sort");
 		return arr;
 	}
 

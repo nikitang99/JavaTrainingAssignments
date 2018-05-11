@@ -19,6 +19,7 @@ public class BubbleSort implements Isort {
 				}
 			}
 		}
+		System.out.println("Bubble Sort");
 		return arr;
 	}
 

@@ -5,6 +5,7 @@ public class SelectionSort implements Isort {
 	@Override
 	public int[] sort(int[] arr) {
 		int i,j,temp;
+		
 		for(i=0;i<arr.length-1 ;i++)
 		{
 			for(j=i+1; j<arr.length-1;j++)
@@ -15,6 +16,7 @@ public class SelectionSort implements Isort {
 				arr[j]=temp;
 			}
 		}
+		System.out.println("Selection Sort");
 		return arr;
 		
 

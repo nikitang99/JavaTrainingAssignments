@@ -26,7 +26,9 @@ public class ProcessSort
 	}
 	public static void sortArray(Isort sObj,int[] arr) 
 	{
-		if(sObj instanceof BubbleSort)
+		int[] srtedArr = sObj.sort(arr);
+		printArray(srtedArr);
+		/*if(sObj instanceof BubbleSort)
 		{
 			int[] srtedArr = sObj.sort(arr);
 			System.out.println("In BubbleSort");
@@ -52,7 +54,7 @@ public class ProcessSort
 			System.out.println("In MergeSort");
 			printArray(srtedArr);
 		}
-		
+		*/
 	}
 
 }

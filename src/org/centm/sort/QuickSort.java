@@ -41,6 +41,7 @@ public class QuickSort implements Isort {
 		int low = 0;
 		int high = arr.length-1;
 		quickSort(arr, low, high);
+		System.out.println("Quick Sort");
 		return arr;
 
 	}
