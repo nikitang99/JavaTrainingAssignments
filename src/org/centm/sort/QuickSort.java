@@ -2,7 +2,7 @@ package org.centm.sort;
 
 public class QuickSort implements Isort {
 
-	int partition(int arr[], int low, int high)
+	private int partition(int arr[], int low, int high)
 	{
 		int pivot = arr[high]; 
 		int i = (low-1);
@@ -24,7 +24,7 @@ public class QuickSort implements Isort {
 
 		return i+1;
 	}
-	void quickSort(int arr[], int low, int high)
+	private void quickSort(int arr[], int low, int high)
 	{
 		if (low < high)
 		{

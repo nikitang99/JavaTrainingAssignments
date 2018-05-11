@@ -9,7 +9,7 @@ public class MergeSort implements Isort {
 		return arr;
 	}
 
-	void MrgeSort(int arr[], int left, int right)
+	private void MrgeSort(int arr[], int left, int right)
 	{
 		if (left < right)
 		{
