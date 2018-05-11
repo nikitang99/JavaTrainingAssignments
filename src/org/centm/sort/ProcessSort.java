@@ -28,33 +28,7 @@ public class ProcessSort
 	{
 		int[] srtedArr = sObj.sort(arr);
 		printArray(srtedArr);
-		/*if(sObj instanceof BubbleSort)
-		{
-			int[] srtedArr = sObj.sort(arr);
-			System.out.println("In BubbleSort");
-			printArray(srtedArr);
-		}
-		else
-			if(sObj instanceof SelectionSort)
-			{
-				sObj.sort(arr);
-				int[] srtedArr = sObj.sort(arr);
-				System.out.println("In SelectionSort");
-				printArray(srtedArr);
-			}
-			else
-				if(sObj instanceof QuickSort)
-				{
-					int[] srtedArr = sObj.sort(arr);
-					System.out.println("In QuickSort");
-					printArray(srtedArr);
-				}
-		else {
-			int[] srtedArr = sObj.sort(arr);
-			System.out.println("In MergeSort");
-			printArray(srtedArr);
-		}
-		*/
+
 	}
 
 }
