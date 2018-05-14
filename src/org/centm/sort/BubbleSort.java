@@ -1,6 +1,6 @@
 package org.centm.sort;
 
-public class BubbleSort implements Isort {
+public class BubbleSort implements ISort {
 
 	@Override
 	public int[] sort(int[] arr) {

@@ -1,6 +1,6 @@
 package org.centm.sort;
 
-public class SelectionSort implements Isort {
+public class SelectionSort implements ISort {
 
 	@Override
 	public int[] sort(int[] arr) {

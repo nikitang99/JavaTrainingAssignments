@@ -18,7 +18,7 @@ public class DriverSort {
         }
 		while( ( choice = ProcessSort.menuList( ) )  != 0 )
 		{
-			Isort srtObj  =  SortFactory.getSortOnChoice(choice);
+			ISort srtObj  =  SortFactory.getSortOnChoice(choice);
 			ProcessSort.sortArray(srtObj, arr);
 		}
 	}

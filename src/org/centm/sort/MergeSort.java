@@ -1,6 +1,6 @@
 package org.centm.sort;
 
-public class MergeSort implements Isort {
+public class MergeSort implements ISort {
 
 	@Override
 	public int[]  sort(int[] arr) {

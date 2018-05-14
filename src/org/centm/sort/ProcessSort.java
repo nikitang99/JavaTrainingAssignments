@@ -24,7 +24,7 @@ public class ProcessSort
 		System.out.println("Enter Choice to for Sorting Algorithm:");
 		return sc.nextInt();		
 	}
-	public static void sortArray(Isort sObj,int[] arr) 
+	public static void sortArray(ISort sObj,int[] arr) 
 	{
 		int[] srtedArr = sObj.sort(arr);
 		printArray(srtedArr);

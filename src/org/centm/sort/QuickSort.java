@@ -1,6 +1,6 @@
 package org.centm.sort;
 
-public class QuickSort implements Isort {
+public class QuickSort implements ISort {
 
 	private int partition(int arr[], int low, int high)
 	{

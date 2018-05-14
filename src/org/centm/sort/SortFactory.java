@@ -2,7 +2,7 @@ package org.centm.sort;
 
 public class SortFactory
 {
-	public static Isort getSortOnChoice( int choice )
+	public static ISort getSortOnChoice( int choice )
 	{		
 		switch( choice )
 		{
